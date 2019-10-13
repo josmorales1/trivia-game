@@ -57,7 +57,7 @@ $(document).ready(function(){
       //  empty last results
       $('#results').html('');
       
-      // show thetimer
+      // show timer
       $('#timer').text(trivia.timer);
       
       // remove start button
@@ -122,8 +122,7 @@ $(document).ready(function(){
           '<p>Correct: '+ trivia.correct +'</p>'+
           '<p>Incorrect: '+ trivia.incorrect +'</p>'+
           '<p>Unaswered: '+ trivia.unanswered +'</p>'+
-          // Hoping that the line of code will switch to this since it still just saying "to play again"
-          '<p>Press Start Game to play again!</p>');
+          '<p>Please play again!</p>');
         
         // hide game sction
         $('#game').hide();
