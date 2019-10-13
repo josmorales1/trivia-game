@@ -57,7 +57,7 @@ $(document).ready(function(){
       //  empty last results
       $('#results').html('');
       
-      // show the timer
+      // show thetimer
       $('#timer').text(trivia.timer);
       
       // remove start button
@@ -121,7 +121,8 @@ $(document).ready(function(){
           .html('<h3>Thank you for playing!</h3>'+
           '<p>Correct: '+ trivia.correct +'</p>'+
           '<p>Incorrect: '+ trivia.incorrect +'</p>'+
-          '<p>Press "Start Game" to play again!</p>');
+          '<p>Unaswered: '+ trivia.unanswered +'</p>'+
+          '<p>Press Start Game to play again!</p>');
         
         // hide game sction
         $('#game').hide();
