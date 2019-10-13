@@ -122,6 +122,7 @@ $(document).ready(function(){
           '<p>Correct: '+ trivia.correct +'</p>'+
           '<p>Incorrect: '+ trivia.incorrect +'</p>'+
           '<p>Unaswered: '+ trivia.unanswered +'</p>'+
+          // Hoping that the line of code will switch to this since it still just saying "to play again"
           '<p>Press Start Game to play again!</p>');
         
         // hide game sction
