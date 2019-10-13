@@ -16,33 +16,30 @@ $(document).ready(function(){
     timer: 20,
     timerOn: false,
     timerId : '',
-    // questions options and answers data
+    // Here I haves the questions for the trivia.
     questions: {
-      q1: 'Who is actually a chef?',
-      q2: 'What does Joey love to eat?',
-      q3: 'How many times has Ross been divorced?',
-      q4: 'How many types of towels does Monica have?',
-      q5: "Who stole Monica's thunder after she got engaged?",
-      q6: 'Who hates Thanksgiving?',
-      q7: "Who thinks they're always the last to find out everything?"
+      q1: 'Who won the 1994 FIFA World Cup?',
+      q2: 'Which player has not played for Real Madrid?', 
+      q3: 'How long can a goalkeeper hold the ball for?',
+      q4: 'Anfiel is home of which club? ',
+      q5: 'In BPL what city does Tottenham play? ',
+     // Here are the answers the user can chose from.
     },
     options: {
-      q1: ['Monica', 'Chandler', 'Rachel', 'Ross'],
-      q2: ['Fish', 'Apples', 'Oranges', 'Sandwhiches'],
-      q3: ['5', '2', '1', '3'],
-      q4: ['3', '8', '11', '6'],
-      q5: ['Rachel','Phoebe','Emily','Carol'],
-      q6: ['Joey','Chandler','Rachel','Ross'],
-      q7: ['Ross', 'Phoebe', 'Monica','Chandler']
+      q1: ['Italy', 'Argentina', 'Brazil', 'France'],
+      q2: ['Beckham', 'Zidane', 'Ronaldo', 'Messi'],
+      q3: ['3 sec', '5 sec', '20 sec', 'Until he feels letting go'],
+      q4: ['Man Utd', 'Liverpool', 'Everton', 'Man City'],
+      q5: ['London','Manchester','Oxford','Chester'],
+    // The correct Answers.
     },
     answers: {
-      q1: 'Monica',
-      q2: 'Sandwhiches',
-      q3: '3',
-      q4: '11',
-      q5: 'Rachel',
-      q6: 'Chandler',
-      q7: 'Phoebe'
+      q1: 'Brazil',
+      q2: 'Messi',
+      q3: '5 Sec',
+      q4: 'Liverpool',
+      q5: 'London',
+      
     },
     // trivia methods
     // method to initialize game
@@ -60,7 +57,7 @@ $(document).ready(function(){
       //  empty last results
       $('#results').html('');
       
-      // show timer
+      // show the timer
       $('#timer').text(trivia.timer);
       
       // remove start button
